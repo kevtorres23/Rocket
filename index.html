@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket</title>
+    <link rel="stylesheet" href="views/styles/homepage_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script src="controllers/homepage_functionality.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="views/images/rocket-logo.png" alt="" width="30px" height="30px">
+                <span>Rocket</span>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" id="checkbtn">
+                <i class="ph ph-list" style="color: white; font-size: 25px;"></i>
+            </label>
+            <div class="nav-sections">
+                <button class="about-us-section">
+                    About Us
+                    <img src="views/images/arrow-down.png" alt="" width="15px" height="15px">
+                </button>
+                <button class="projects-section">
+                    Projects
+                    <img src="views/images/arrow-down.png" alt="" width="15px" height="15px">
+                </button>
+                <button class="solutions-section">
+                    Solutions
+                    <img src="views/images/arrow-down.png" alt="" width="15px" height="15px">
+                </button>
+            </div>
+            <div class="buttons">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <button type="submit" class="search-btn"><img src="views/images/search-icon.png" alt="" width="18px" height="18px"></button>
+                </div>
+                <button class="login">Log In</button>
+                <button class="sign-up">Sign Up</button>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <button class="close-sidebar" id="close-sidebar"><i class="ph-bold ph-list"></i></button>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search">
+            <button type="submit" class="search-btn"><img src="views/images/search-icon-dark.png" alt="" width="13px" height="13px"></button>
+        </div>
+        <div class="nav-sections">
+            <button class="about-us-section">
+                About Us
+                <img src="views/images/arrow-down.png" alt="" width="15px" height="15px">
+            </button>
+            <button class="projects-section">
+                Projects
+                <img src="views/images/arrow-down.png" alt="" width="15px" height="15px">
+            </button>
+            <button class="solutions-section">
+                Solutions
+                <img src="views/images/arrow-down.png" alt="" width="15px" height="15px">
+            </button>
+        </div>
+        <div class="buttons">
+            <button class="login">Log In</button>
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="main-text">
+            <h1>Launch your Ideas</h1>
+            <h3>Rocket is about ideation. We are a technology platform that aims to provide users with useful tools to develop any kind of project, using Artificial Intelligence.<br>
+            <p style="font-weight: 600;">Shoot at the stars. Launch your dreams.</p>
+            </h3>
+            <div class="account-buttons">
+                <button class="get-started">Get Started</button>
+                <button class="demo">Demo Account</button>
+            </div>
+        </div>
+    </main>
+
+    <section class="ready-to-launch">
+        <div class="purple-line"></div>
+        <img src="views/images/rocket-3d.png" alt="" width="349px" height="322px">
+        <div class="introduction">
+            <h1>Ready to launch?</h1>
+            <h3>Raising ideas never was easier. At Rocket, our goal is to help you give direction to your projects and boost your creativity, just like a rocket.</h3>
+            <button class="guide">Quickstart Guide</button>
+        </div>
+    </section>
+    <section class="features">
+        <h1>A Platform of Solutions</h1>
+        <h2>We are a team that works to develop different types<br>of software requests. Know our features.</h2>
+        
+        <div class="feature-row">
+            <div class="feature-container">
+                <img src="views/images/aid.png" alt="" width="60px" height="60px" class="feature-icon">
+                <h3>Personalized Aid</h3>
+                <p>We work to attend your particular needs and give you the best outcome.</p>
+                <button class="feature-btn">Learn more</button>
+            </div>
+            <div class="feature-container">
+                <img src="views/images/article.png" alt="" width="60px" height="60px" class="feature-icon">
+                <h3>Reliable Articles</h3>
+                <p>We offer a wide variety of articles that report how we get to different kind of results.</p>
+                <button class="feature-btn">Explore articles</button>
+            </div>
+        </div><br>
+        <div class="feature-row">
+            <div class="feature-container">
+                <img src="views/images/ai.png" alt="" width="60px" height="60px" class="feature-icon">
+                <h3>AI-Powered</h3>
+                <p>We implement Artificial Intelligence in our services to ensure efficiency always.</p>
+                <button class="feature-btn">Our algorithms</button>
+            </div>
+            <div class="feature-container">
+                <img src="views/images/rocket-feature.png" alt="" width="60px" height="60px" class="feature-icon">
+                <h3>Ideas Generation</h3>
+                <p>We are always available to discuss your ideas and help you raise new, better ones.</p>
+                <button class="feature-btn">Chatting spaces</button>
+            </div>            
+        </div>
+    </section>
+    <section class="how-it-works">
+            <img src="views/images/fill-out.jpg" alt="" width="725px" height="770px" class="fill-out-image">
+            <h1>Rocket remains simple</h1>
+            <h2>By following some simple steps, you will get started into our general<br>worfklow. We made sure it is easy for you to follow.</h2>
+            <br>
+            <div class="purple-line"></div>
+            <div class="collapsible-element">
+                <button type="button" class="collapse-btn"><i class="ph-bold ph-notebook icon"></i>Tell us what are you looking for.</button>
+                <div class="collapsible-content">
+                    <p>Fill out a form to provide us with essential information about what you need exactly. Is it a technical, design, or logical inquiry? How would you like it to be presented? Please let us know everything.</p>
+                </div>
+            </div>
+            <div class="collapsible-element">
+                <button type="button" class="collapse-btn"><i class="ph-bold ph-paper-plane-tilt icon"></i>Send it for development.</button>
+                <div class="collapsible-content">
+                    <p>When you feel you've explained your solution request enough, please send it to us. We will receive it and review it to start working on it.</p>
+                </div>
+            </div>
+            <div class="collapsible-element">
+                <button type="button" class="collapse-btn"><i class="ph-bold ph-nut icon"></i>Let's get to work.</button>
+                <div class="collapsible-content">
+                    <p>A Rocket's development team will briefly start working on your request. Meanwhile, they will stablish a clear, effective communication with you to ensure that everything is going well.</p>
+                </div>
+            </div>
+            <div class="collapsible-element">
+                <button type="button" class="collapse-btn"><i class="ph-bold ph-cube icon"></i>Receive your solution product.</button>
+                <div class="collapsible-content">
+                    <p>When your request is completed, you will receive a report containing all your solution details, including a product ready to download or use as you wish.</p>
+                </div>
+            </div>
+    </section>
+    <section class="learning">
+        <div class="description">
+            <h1>Learn always.</h1>
+            <p>Rocket also allows users to learn continuously. Our solutions come with a detailed explanation of how the development team reached it.</p>
+            <button class="dev-team-btn">Development Team</button>
+        </div>
+        <img src="views/images/stars.png" alt="" width="300px" height="300px">
+    </section>
+    <section class="everything-ready">
+        <h1>Everything is ready.</h1>
+        <h2>Launching in 3, 2, 1...</h2>
+        <button class="sign-now">Get Started</button><br><br>
+    </section>
+    <footer>
+        <div class="group">
+            <div class="brand">
+                <div class="logo">
+                    <img src="views/images/rocket-logo.png" alt="" width="40px" height="40px">
+                    <span>Rocket</span>
+                </div><br>
+                <p>Shoot at the stars. Launch your ideas.</p>
+            </div>
+            <div class="box">
+                <h2>ABOUT US</h2>
+                <p>What is Rocket</p>
+                <p>Use Guideline</p>
+                <p>Terms and Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="box">
+                <h2>TOOLS</h2>
+                <p>Articles</p>
+                <p>Rocket's Team</p>
+                <p>Forums</p>
+            </div>
+            <div class="box">
+                <h2>CONTACT US</h2>
+                <p>Articles</p>
+                <h2>GET IN TOUCH</h2>
+                <i class="ph ph-facebook-logo"></i><i class="ph ph-instagram-logo"></i><i class="ph ph-x-logo"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
