@@ -37,7 +37,6 @@ header .container{
 }
 
 .nav-sections{
-    font-size: 16px;
     font-weight: 400;
     display: flex;
     margin-left: 60px;
@@ -56,7 +55,7 @@ header .container{
     outline: none;
     color: white;
     font-family: 'DM Sans';
-    font-size: 17px;
+    font-size: 90%;
     font-weight: 400;
     cursor: pointer;
 }
@@ -113,7 +112,7 @@ header .container{
     font-family: 'DM Sans';
     background-color: #880AEA;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     padding: 9px 30px;
     border-radius: 30px;
@@ -125,7 +124,7 @@ header .container{
     font-family: 'DM Sans';
     background: none;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     padding: 9px 30px;
     border-radius: 30px;
@@ -704,13 +703,19 @@ footer .group .box figure{
 }
 
 @media (max-width: 967px){
+    
     main{
         height: 50vw;
         width: 100%;
     }
 
     .account-buttons{
-        font-size: 1.5vw;
+        font-size: 1vw;
+    }
+
+    .sign-up, .login{
+        padding: 1vw 3vw;
+        font-size: 2vh;
     }
     
     .main-text{
@@ -742,7 +747,7 @@ footer .group .box figure{
     }
 
     header .container{
-        width: 100%;
+        width: 95%;
     }
 
     .logo{
