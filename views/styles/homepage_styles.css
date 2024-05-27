@@ -493,7 +493,7 @@ main h3{
 }
 
 .how-it-works h1{
-    font-size: 71px;
+    font-size: 3.5vw;
 }
 
 .how-it-works h2{
@@ -534,7 +534,7 @@ main h3{
     border-style: none;
     border-color: none;
     font-family: 'DM Sans';
-    font-size: 24px;
+    font-size: 3vh;
     font-weight: 700;
     color: #707070;
     cursor: pointer;
@@ -557,7 +557,7 @@ main h3{
     padding-right: 15px;
     display: none;
     overflow: hidden;
-    font-size: 18px;
+    font-size: 2.5vh;
 }
 
 .everything-ready{
