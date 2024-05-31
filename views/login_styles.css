@@ -58,16 +58,80 @@ body{
 }
 
 .login-input{
-    width: 25vw;
+    width: 23vw;
     border-radius: 20px;
     height: 2vw;
     border: 1.5px solid #AFAFAF;
-    padding-left: 1.5vw;
+    padding-left: 20px;
+    padding-right: 20px;
     outline: none;
     font-family: 'DM Sans';
-    margin-bottom: 1vw;
+    margin-bottom: 0.5vw;
 }
 
 .login-form{
     align-items: center;
+    margin-top: -1.5vw;
+}
+
+.login-form p{
+    font-size: 13px;
+}
+
+.forgot-password{
+    text-align: right;
+    color: #880AEA !important;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sign-in-btn{
+    margin-top: 3vw;
+    background-color: #880AEA;
+    color: white;
+    cursor: pointer;
+    padding: 0.8vw 11.2vw;
+    border: none;
+    font-family: 'DM Sans';
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+.or{
+    display: flex;
+    margin-top: 1.5vw;
+    align-items: center;
+    color: #757575;
+}
+
+.gray-line{
+    width: 10vw;
+    height: 0.5px;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    background-color: #b5b5b5;
+}
+
+.create-account-btn{
+    margin-top: 1.5vw;
+    background-color: transparent;
+    color: #880AEA;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'DM Sans';
+    padding: 0.7vw 8.5vw;
+    border: solid 1px #880AEA;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+.sign-in-btn:hover{
+    background-color: #890aeabb;
+}
+
+.create-account-btn:hover{
+    background-color: #ad43fe;
+    color: white;
 }
