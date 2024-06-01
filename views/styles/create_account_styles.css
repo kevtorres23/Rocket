@@ -5,33 +5,137 @@ body{
 }
 
 .black-side{
-    width: 55%;
-    height: 100vh;
+    width: 45%;
+    height: auto;
     color: white;
     background-color: black;
     display: flex;
     flex-direction: column;
     padding-top: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 100px;
 }
 
 .logo{
     width: auto;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-weight: 600;
     display: flex;
+    margin-right: auto;
 }
 
 .already-account{
-    margin-left: 65vh;
+    right: 0;
+    font-size: 1vw;
 }
 
 .upper{
     display: flex;
     align-items: center;
+    width: 100%;
+    margin-bottom: 2vw;
 }
 
 .login-link{
     color: #880AEA;
+}
+
+.black-side h1{
+    font-weight: 600;
+    font-size: 3.5vw;
+}
+
+.black-side h2{
+    margin-top: -2vw;
+    font-weight: 300;
+    font-size: 1.3vw;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+}
+
+.user-info label{
+    display: block;
+    margin-bottom: 0.6vw;
+    font-size: 1vw;
+    font-weight: 500;
+    margin-top: 1.2vw;
+}
+
+.login-input{
+    background-color: transparent;
+    color: white;
+    font-family: 'DM Sans';
+    outline: none;
+    margin-bottom: 0.5vw;
+    border: 1.5px solid #424242;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 2.2vw;
+    width: 78%;
+}
+
+.mid-field{
+    display: inline-block;
+}
+
+.mid-field label{
+    display: block;
+    margin-bottom: 0.6vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.name-and-lastname{
+   display: flex;
+   width: 100%;
+   align-items: center;
+}
+
+.create-account-btn{
+    width: 84%;
+    height: 3vw;
+    background-color: #880AEA;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 1vw;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2vw;
+}
+
+.white-side{
+    width: 55%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.white-side h1{
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.white-side h2{
+    margin-top: -2vw;
+    font-size: 1.3vw;
+    font-weight: 400;
+    text-align: center;
+}
+
+.keyword{
+    background: -webkit-linear-gradient(left, #D06CFF, #880AEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
