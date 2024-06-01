@@ -17,12 +17,20 @@ body{
     padding-bottom: 100px;
 }
 
+a{
+    text-decoration: none;
+}
+
+.logo-link{
+    margin-right: auto;
+}
+
 .logo{
     width: auto;
     font-size: 1.3vw;
     font-weight: 600;
     display: flex;
-    margin-right: auto;
+    color: white;
 }
 
 .already-account{
@@ -72,12 +80,18 @@ body{
     font-family: 'DM Sans';
     outline: none;
     margin-bottom: 0.5vw;
-    border: 1.5px solid #424242;
+    border: 1.5px solid #434343;
     border-radius: 30px;
     padding-left: 20px;
     padding-right: 20px;
     height: 2.2vw;
     width: 78%;
+    background-color: #000000;
+}
+
+.login-input:focus{
+    outline: none;
+    border: 1.5px solid #880AEA;
 }
 
 .mid-field{
