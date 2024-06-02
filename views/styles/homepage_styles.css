@@ -354,7 +354,7 @@ main h3{
     display: flex;
     padding-top: 150px;
     justify-content: center;
-    vertical-align: center;
+    align-items: center;
     padding-bottom: 100px;
 }
 
@@ -706,7 +706,6 @@ footer .group .box figure{
     
     main{
         height: 50vw;
-        width: 100%;
     }
 
     .account-buttons{
@@ -719,15 +718,16 @@ footer .group .box figure{
     }
     
     .main-text{
-        width: 60%;
+        width: 70%;
+        margin-top: -3vw !important;
     }
 
     main h1{
-        font-size: 7vw;
+        font-size: 8vw;
     }
 
     main h3{
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     header .container > *:not(.buttons, .logo) {
@@ -754,4 +754,27 @@ footer .group .box figure{
         margin-left: 40px;
     }
 
+    .get-started, .demo{
+        padding: 1.7vw 3vw;
+        font-size: 1.7vw;
+    }
+
+    .ready-to-launch img{
+        width: 37vw;
+        height: 34vw;
+    }
+
+    .ready-to-launch h1{
+        font-size: 5vw;
+    }
+
+    .ready-to-launch h3{
+        font-size: 1.8vw;
+    }
+
+    .ready-to-launch .guide{
+        font-size: 1.3vw;
+        padding: 1.5vw 2vw;
+        align-items: center;
+    }
 }
