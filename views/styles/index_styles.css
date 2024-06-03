@@ -11,8 +11,6 @@ header{
     color: white;
     background-color: black;
     height: 65px;
-    padding-left: 65px;
-    padding-right: 65px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: rgb(43, 43, 43);
@@ -25,7 +23,7 @@ header .container{
     display: flex;
     align-items: center;
     vertical-align: middle;
-    width: 90%;
+    padding: 0 3rem;
 }
 
 .logo{
@@ -304,15 +302,14 @@ header .container{
 
 main{
     width: 100%;
-    min-height: 40vw;
+    min-height: 45vw;
     background-image: url(../images/main.png);
     background-size: cover;
     background-position: center;
     text-align: center;
     display: flex;
     justify-content: center;
-    padding-top: 120px;
-    padding-bottom: 20px;
+    align-items: center;
 }
 
 .main-text{
@@ -703,68 +700,31 @@ footer .group .box figure{
     background-color: #720CC1;
 }
 
-@media (max-width: 967px){
-    .account-buttons{
-        font-size: 1vw;
+@media (max-width: 1024px){
+    main{
+        padding: 5rem 2rem;
     }
 
-    .sign-up, .login{
-        padding: 1vw 3vw;
-        font-size: 2vh;
-    }
-    
     .main-text{
-        width: 70%;
-        margin-top: -3vw !important;
+        width: 80%;
     }
 
-    main h1{
-        font-size: 8vw;
+    .main-text h1{
+        font-size: 4rem;
     }
 
-    main h3{
-        font-size: 2vw;
-    }
-
-    header{
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    header .container{
-        width: 95%;
-    }
-
-    .logo{
-        margin-left: 40px;
+    .main-text h3{
+        max-width: 30rem;
+        font-size: 1rem;
     }
 
     .get-started, .demo{
-        padding: 1.7vw 3vw;
-        font-size: 1.7vw;
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 1rem 1.7rem;
+        margin-right: 3.5vw;
     }
 
-    .ready-to-launch img{
-        width: 33vw;
-        height: 30vw;
-    }
-
-    .ready-to-launch h1{
-        font-size: 5vw;
-    }
-
-    .ready-to-launch h3{
-        font-size: 1.8vw;
-    }
-
-    .ready-to-launch .guide{
-        font-size: 1.5vw;
-        padding: 1.7vw 2.1vw;
-        align-items: center;
-    }
-}
-
-@media (max-width: 1024px){
     .features h1{
         font-size: 6vw;
     }
