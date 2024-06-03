@@ -1,0 +1,822 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'DM Sans';
+}
+
+header{
+    top: 0;
+    width: 100%;
+    font-family: 'DM Sans';
+    color: white;
+    background-color: black;
+    height: 65px;
+    padding-left: 65px;
+    padding-right: 65px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(43, 43, 43);
+    position: fixed;
+    z-index: 9999;
+}
+
+header .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    width: 90%;
+}
+
+.logo{
+    width: auto;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.nav-sections{
+    font-weight: 400;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.about-us-section,
+.projects-section,
+.solutions-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'DM Sans';
+    font-size: 90%;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.about-us-section:after,
+.projects-section:after,
+.solutions-section:after{
+    content: "";
+    position: absolute;
+    background-color: #880AEA;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.about-us-section:hover:after,
+.projects-section:hover:after,
+.solutions-section:hover:after{
+    width: 100%;
+}
+
+.nav-sections img{
+    margin-left: 5px;
+}
+
+.logo img{
+    margin-right: 10px;
+}
+
+.buttons{
+    display: flex;
+    margin-left: auto;
+    width: auto;
+    height: auto;
+}
+
+.search-box, .login, .sign-up{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.login:hover{
+    border-color: transparent;
+    background-color: #952ce5;
+}
+
+.sign-up:hover{
+    background-color: #701caf;
+}
+
+.sign-up{
+    font-family: 'DM Sans';
+    background-color: #880AEA;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 30px;
+    border-radius: 30px;
+    border-style: none;
+    transition: 0.3s;
+}
+
+.login{
+    font-family: 'DM Sans';
+    background: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 30px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #880AEA;
+    transition: 0.5s;
+}
+
+.get-started{
+    font-family: 'DM Sans';
+    background-color: #880AEA;
+    color: white;
+    font-size: 1.1vw;
+    font-weight: 500;
+    padding: 15px 37px;
+    border-radius: 30px;
+    border-style: none;
+    transition: 0.3s;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.get-started:hover{
+    background-color: #701caf;
+}
+
+.demo{
+    font-family: 'DM Sans';
+    background: none;
+    color: white;
+    font-size: 1.1vw;
+    font-weight: 500;
+    padding: 15px 37px;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2.3px;
+    border-color: #890aea94;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.demo:hover{
+    background-color: #a035f2;
+}
+
+.search-box{
+    width: 180px;
+    height: 35px;
+    background-color: transparent;
+    border: 1.5px solid rgb(171, 170, 170);
+    border-radius: 40px;
+    display: none;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-box input{
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'DM Sans';
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.search-box .search-btn{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    display: none;
+}
+
+.sidebar.active{
+    display: block;
+}
+
+.sidebar .nav-sections{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.sidebar .nav-sections img{
+    width: 15px;
+    height: 15px;
+    margin-left: auto;
+}
+
+.sidebar .about-us-section,
+.sidebar .projects-section,
+.sidebar .solutions-section{
+    display: flex;
+    color: black;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.sidebar .buttons{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 330px;
+    position: absolute;
+    bottom: 30px;
+    width: 90%;
+}
+
+
+.sidebar .login{
+    border-radius: 30px;
+    border-width: 1px;
+    margin-top: 20px;
+    color: #880AEA;
+}
+
+.sidebar .login:hover{
+    color: white;
+}
+
+.sidebar .search-box{
+    color: black;
+    border: 1.5px solid transparent;
+    background-color: rgb(230, 230, 230);
+    margin-top: 30px;
+    width: 170px;
+    height: 33px;
+    padding-right: 20px;
+}
+
+.sidebar .search-input{
+    color: black;
+    font-size: 12px;
+}
+
+.sidebar .sign-up{
+    color: white;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.checkbtn{
+    margin-left: auto;
+    margin-right: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.close-sidebar{
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: grey;
+    font-size: 25px;
+}
+
+main{
+    width: 100%;
+    height: 40vw;
+    background-image: url(../images/main.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.main-text{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+main h1{
+    font-size: 6vw;
+    color: white;
+    font-weight: 600;
+}
+
+main h3{
+    margin-top: -20px;
+    margin-bottom: 50px;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: white;
+}
+
+.account-buttons{
+    align-items: center;
+}
+
+.account-buttons .sign-up{
+    margin-right: 50px;
+    padding: 15px 43px;
+}
+
+.account-buttons .login{
+    padding: 15px 43px;
+}
+
+.ready-to-launch{
+    display: flex;
+    padding-top: 150px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.ready-to-launch img{
+    margin-right: 60px;
+}
+
+.ready-to-launch .introduction{
+    align-items: center;
+    width: 30%;
+}
+
+.introduction h1{
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.introduction h3{
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.ready-to-launch .purple-line{
+    position: absolute;
+    height: 325px;
+    color:#880AEA;
+    background: linear-gradient(#000000, #880AEA);
+    width: 2px;
+    left: 80px;
+}
+
+.guide{
+    margin-top: 30px;
+    font-family: 'DM Sans';
+    background-color: #880AEA;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 30px;
+    border-radius: 30px;
+    border-style: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.guide:hover{
+    background-color: #720CC1;
+}
+
+.features{
+    font-family: 'DM Sans';
+    margin-top: 70px;
+}
+
+.features h1{
+    padding: 12px 80px;
+    font-weight: 600;
+    font-size: 74px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.features h2{
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 5vw;
+}
+
+.feature-container{
+    width: 360px;
+    height: 250px;
+    background-color: #0a0a0a;
+    border: solid 1px #262626;
+    border-radius: 20px;
+    padding: 5vw 4vw;
+    font-family: 'DM Sans';
+    color: white;
+    margin-right: 1vw;
+    align-items: center;
+}
+
+.feature-container h3{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.feature-container p{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.feature-icon{
+    border-radius: 10px;
+}
+
+.feature-btn{
+    cursor: pointer;
+    background-color: black;
+    padding: 12px 32px;
+    color: white;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(#090909, #090909) padding-box,
+                linear-gradient(to right, #9747FF, #6F00FF) border-box;
+    border-radius: 50em;
+    border: 1.5px solid transparent;
+    margin-top: 1vw;
+    transition: 1s;
+}
+
+.feature-row{
+    display: flex;
+    margin-top: 0;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    justify-content: center;
+}
+
+.feature-btn:hover{
+    background-image: linear-gradient(to right, #9747FF, #6F00FF);
+}
+
+.how-it-works{
+    overflow: hidden;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-bottom: 80px;
+    color: black;
+    margin-top: 150px;
+    background-color: white;
+    height: 950px;
+}
+
+.how-it-works h1{
+    font-size: 3.5vw;
+}
+
+.how-it-works h2{
+    margin-top: -30px;
+    font-weight: 400;
+    font-size: 21px;
+    margin-bottom: 3vw;
+}
+
+.how-it-works .purple-line{
+    position: absolute;
+    height: 32vw;
+    color:#880AEA;
+    background: linear-gradient(#ffffff, #880AEA);
+    width: 2px;
+    left: 88px;
+}
+
+.fill-out-image{
+    border-radius: 40px;
+    float: right;
+    transform: translateX(6vw);
+    margin-top: 80px;
+}
+
+.collapsible-element{
+    width: 40%;
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin-bottom: 0.7vw;
+}
+
+.collapse-btn{
+    text-align: left;
+    background-color: transparent;
+    height: auto;
+    padding: 5px 7px;
+    border-style: none;
+    border-color: none;
+    font-family: 'DM Sans';
+    font-size: 3vh;
+    font-weight: 700;
+    color: #707070;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.collapse-btn i{
+    font-size: 32px;
+    margin-right: 1rem;
+    color: #707070;
+}
+
+.collapsible-element.open i{
+    color: #880AEA;
+}
+
+.collapsible-content{
+    padding-left: 52px;
+    padding-right: 15px;
+    display: none;
+    overflow: hidden;
+    font-size: 2.5vh;
+}
+
+.everything-ready{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'DM Sans';
+    color: white;
+    background-image: linear-gradient(to right, #B780FF, #880AEA);
+    width: 100%;
+    height: 600px;
+}
+
+.everything-ready h1{
+    font-size: 74px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+}
+
+.everything-ready h2{
+    margin-top: -50px;
+    font-size: 32px;
+    font-weight: 300;
+    justify-content: center;
+    text-align: center;
+}
+
+.everything-ready img{
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.sign-now{
+    margin-top: 2vw;
+    padding: 20px 40px;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+    font-family: 'DM Sans';
+    font-size: 21px;
+    font-weight: 600;
+    border-radius: 50px;
+    border-style: none;
+}
+
+.brand{
+    width: 12vw;
+}
+
+footer{
+    display: flex;
+    padding: 80px 80px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .logo{
+    font-size: 34px;
+    margin-bottom: -30px;
+}
+
+footer p{
+    font-size: 18px;
+    color: rgb(197, 197, 197);
+}
+
+footer h2{
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+footer .box p{
+    color: rgb(150, 150, 150);
+}
+
+footer .group{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 120px;
+}
+
+footer .group .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box i{
+    color: #880AEA;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.learning{
+    display: flex;
+    padding-top: 150px;
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+    padding-bottom: 100px;
+    margin-right: 60px;
+}
+
+.learning .description{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.learning h1{
+    font-size: 48px;
+}
+
+.learning p{
+    font-size: 19px;
+}
+
+.dev-team-btn{
+    margin-top: 30px;
+    font-family: 'DM Sans';
+    background-color: #880AEA;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 30px;
+    border-radius: 30px;
+    border-style: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.dev-team-btn:hover{
+    background-color: #720CC1;
+}
+
+@media (max-width: 967px){
+    
+    main{
+        height: 50vw;
+    }
+
+    .account-buttons{
+        font-size: 1vw;
+    }
+
+    .sign-up, .login{
+        padding: 1vw 3vw;
+        font-size: 2vh;
+    }
+    
+    .main-text{
+        width: 70%;
+        margin-top: -3vw !important;
+    }
+
+    main h1{
+        font-size: 8vw;
+    }
+
+    main h3{
+        font-size: 2vw;
+    }
+
+    header .container > *:not(.buttons, .logo) {
+        display: none;
+    }
+
+    .checkbtn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+
+    header{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    header .container{
+        width: 95%;
+    }
+
+    .logo{
+        margin-left: 40px;
+    }
+
+    .get-started, .demo{
+        padding: 1.7vw 3vw;
+        font-size: 1.7vw;
+    }
+
+    .ready-to-launch img{
+        width: 33vw;
+        height: 30vw;
+    }
+
+    .ready-to-launch h1{
+        font-size: 5vw;
+    }
+
+    .ready-to-launch h3{
+        font-size: 1.8vw;
+    }
+
+    .ready-to-launch .guide{
+        font-size: 1.5vw;
+        padding: 1.7vw 2.1vw;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px){
+    .features h1{
+        font-size: 6vw;
+    }
+
+    .features h2{
+        font-size: 2vw;
+    }
+
+    .feature-container{
+        width: 50vw;
+        height: 28vw;
+    }
+
+    .feature-container h3{
+        font-size: 2.5vw;
+    }
+
+    .feature-container p{
+        font-size: 1.5vw;
+    }
+
+    .feature-btn{
+        font-size: 1.3vw;
+        padding: 1vw 2vw;
+    }
+
+    .feature-icon{
+        width: 5.3vw;
+        height: 5.3vw;
+    }
+
+    .main-text{
+        width: 80%;
+    }
+
+    .main-text h1{
+        font-size: 8vw !important;
+    } 
+}
