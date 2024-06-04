@@ -734,26 +734,7 @@ footer .group .box figure{
     }
 
     .feature-container{
-        width: 50vw;
-        height: 28vw;
-    }
-
-    .feature-container h3{
-        font-size: 2.5vw;
-    }
-
-    .feature-container p{
-        font-size: 1.5vw;
-    }
-
-    .feature-btn{
-        font-size: 1.3vw;
-        padding: 1vw 2vw;
-    }
-
-    .feature-icon{
-        width: 5.3vw;
-        height: 5.3vw;
+        padding: 4vw 5vw;
     }
 }
 
@@ -800,6 +781,11 @@ footer .group .box figure{
 
     .features h2{
         font-size: 2.7vw;
+    }
+
+    .feature-container{
+        max-width: 70vw;
+        padding: 6vw 8vw;
     }
 
     .feature-row{
