@@ -135,3 +135,8 @@ body{
     background-color: #ad43fe;
     color: white;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+}

@@ -330,7 +330,7 @@ main h1{
 main h3{
     margin-top: -20px;
     margin-bottom: 50px;
-    font-size: 1.3vw;
+    font-size: 1.2rem;
     font-weight: 400;
     color: white;
 }
@@ -402,7 +402,7 @@ main h3{
 .features h1{
     padding: 12px 80px;
     font-weight: 600;
-    font-size: 74px;
+    font-size: 5vw;
     color: white;
     text-align: center;
     justify-content: center;
@@ -410,7 +410,7 @@ main h3{
 
 .features h2{
     justify-content: center;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 300;
     text-align: center;
     margin-top: -50px;
@@ -418,25 +418,22 @@ main h3{
 }
 
 .feature-container{
-    width: 360px;
-    height: 250px;
+    padding: 3vw 3vw;
+    max-width: 27vw;
     background-color: #0a0a0a;
     border: solid 1px #262626;
     border-radius: 20px;
-    padding: 5vw 4vw;
     font-family: 'DM Sans';
     color: white;
-    margin-right: 1vw;
-    align-items: center;
 }
 
 .feature-container h3{
     font-weight: 600;
-    font-size: 28px;
+    font-size: 1.5rem;
 }
 
 .feature-container p{
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -450,7 +447,7 @@ main h3{
     padding: 12px 32px;
     color: white;
     font-family: 'DM Sans';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     background: linear-gradient(#090909, #090909) padding-box,
                 linear-gradient(to right, #9747FF, #6F00FF) border-box;
@@ -461,11 +458,12 @@ main h3{
 }
 
 .feature-row{
-    display: flex;
-    margin-top: 0;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
+    align-items: center;
+    row-gap: 1.5vw;
+    column-gap: 1.5vw;
 }
 
 .feature-btn:hover{
@@ -802,5 +800,9 @@ footer .group .box figure{
 
     .features h2{
         font-size: 2.7vw;
+    }
+
+    .feature-row{
+        grid-template-columns: auto;
     }
 }
