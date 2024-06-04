@@ -2,6 +2,7 @@ body{
     background-color: black;
     color: white;
     font-family: 'DM Sans';
+    width: 100%;
 }
 
 header{
@@ -353,6 +354,7 @@ main h3{
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
+    width: 100%;
 }
 
 .ready-to-launch img{
@@ -372,15 +374,6 @@ main h3{
 .introduction h3{
     font-weight: 300;
     font-size: 19px;
-}
-
-.ready-to-launch .purple-line{
-    position: absolute;
-    height: 325px;
-    color:#880AEA;
-    background: linear-gradient(#000000, #880AEA);
-    width: 2px;
-    left: 80px;
 }
 
 .guide{
@@ -710,19 +703,28 @@ footer .group .box figure{
     }
 
     .main-text h1{
-        font-size: 4rem;
+        font-size: 7vw;
     }
 
     .main-text h3{
-        max-width: 30rem;
+        max-width: 80%;
         font-size: 1rem;
     }
 
     .get-started, .demo{
         font-size: 0.9rem;
         font-weight: 600;
-        padding: 1rem 1.7rem;
+        padding: 0.8rem 1.7rem;
         margin-right: 3.5vw;
+    }
+
+    .ready-to-launch img{
+        width: 20rem;
+        height: 18rem;
+    }
+
+    .ready-to-launch h3{
+        font-size: 1.1rem;
     }
 
     .features h1{
@@ -767,5 +769,38 @@ footer .group .box figure{
         align-items: center;
         cursor: pointer;
         margin-right: 40px;
+    }
+}
+
+@media (max-width: 643px){
+    .ready-to-launch{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ready-to-launch img{
+        width: 50vw;
+        height: 46vw;
+        margin: 0;
+    }
+
+    .ready-to-launch .introduction{
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px){
+    .main-text h1{
+        font-size: 9vw;
+        width: 100%;
+    }
+
+    .features h1{
+        font-size: 9vw;
+    }
+
+    .features h2{
+        font-size: 2.7vw;
     }
 }
