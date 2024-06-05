@@ -477,9 +477,9 @@ main h3{
 }
 
 .how-it-works{
-    padding-top: 6vw;
+    padding-top: 5vw;
     padding-left: 80px;
-    padding-bottom: 6vw;
+    padding-bottom: 5vw;
     color: black;
     margin-top: 10vw;
     background-color: white;
@@ -559,7 +559,7 @@ main h3{
     padding-right: 15px;
     display: none;
     overflow: hidden;
-    font-size: 2.5vh;
+    font-size: 2.3vh;
 }
 
 .everything-ready{
