@@ -471,25 +471,29 @@ main h3{
     background-image: linear-gradient(to right, #9747FF, #6F00FF);
 }
 
+.collapsible-set{
+    display: flex;
+    flex-direction: column;
+}
+
 .how-it-works{
-    overflow: hidden;
-    padding-top: 80px;
+    padding-top: 6vw;
     padding-left: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 6vw;
     color: black;
-    margin-top: 150px;
+    margin-top: 10vw;
     background-color: white;
-    height: 950px;
+    overflow-x: hidden;
 }
 
 .how-it-works h1{
-    font-size: 3.5vw;
+    font-size: 4vw;
 }
 
 .how-it-works h2{
-    margin-top: -30px;
+    margin-top: -2vw;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 1.2rem;
     margin-bottom: 3vw;
 }
 
@@ -503,14 +507,15 @@ main h3{
 }
 
 .fill-out-image{
-    border-radius: 40px;
+    display: flex;
     float: right;
+    position: relative;
+    border-radius: 40px;
     transform: translateX(6vw);
     margin-top: 80px;
 }
 
 .collapsible-element{
-    width: 40%;
     padding: 30px 30px;
     border-radius: 10px;
     margin-bottom: 0.7vw;
