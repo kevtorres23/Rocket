@@ -487,7 +487,8 @@ main h3{
 }
 
 .how-it-works h1{
-    font-size: 4vw;
+    font-size: 5vw;
+    text-align: center;
 }
 
 .how-it-works h2{
@@ -495,6 +496,7 @@ main h3{
     font-weight: 400;
     font-size: 1.2rem;
     margin-bottom: 3vw;
+    text-align: center;
 }
 
 .how-it-works .purple-line{
@@ -506,13 +508,18 @@ main h3{
     left: 88px;
 }
 
-.fill-out-image{
-    display: flex;
+.fill-out-img{
+    width: 45vw;
+    height: 42vw;
     float: right;
-    position: relative;
-    border-radius: 40px;
-    transform: translateX(6vw);
-    margin-top: 80px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.features-tab{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 7rem;
 }
 
 .collapsible-element{
