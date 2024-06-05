@@ -3,6 +3,8 @@ body{
     color: white;
     font-family: 'DM Sans';
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 header{
@@ -302,7 +304,6 @@ header .container{
 }
 
 main{
-    width: 100%;
     min-height: 45vw;
     background-image: url(../images/main.png);
     background-size: cover;
