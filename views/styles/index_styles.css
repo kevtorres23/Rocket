@@ -1054,7 +1054,7 @@ footer .group .box figure{
 
 @media (max-width: 500px){
     footer{
-        justify-content: left;
+        padding: 60px 50px;
     }
 
     .brand{
