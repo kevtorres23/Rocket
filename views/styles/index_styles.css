@@ -402,7 +402,6 @@ main h3{
 }
 
 .features h1{
-    padding: 12px 80px;
     font-weight: 600;
     font-size: 5vw;
     color: white;
@@ -539,7 +538,7 @@ main h3{
     border-style: none;
     border-color: none;
     font-family: 'DM Sans';
-    font-size: 3vh;
+    font-size: 1.5vw;
     font-weight: 700;
     color: #707070;
     cursor: pointer;
@@ -562,7 +561,7 @@ main h3{
     padding-right: 15px;
     display: none;
     overflow: hidden;
-    font-size: 2.3vh;
+    font-size: 16px;
 }
 
 .everything-ready{
@@ -576,8 +575,8 @@ main h3{
     color: white;
     background-image: linear-gradient(to right, #B780FF, #880AEA);
     width: 100%;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
 }
 
 .everything-ready h1{
@@ -780,6 +779,14 @@ footer .group .box figure{
         font-size: 2vw;
         padding: 2vw 4vw;
     }
+
+    .collapsible-content{
+        font-size: 1.5vw;
+    }
+
+    .collapse-btn{
+        font-size: 2vw;
+    }
 }
 
 @media (max-width: 885px){
@@ -816,6 +823,14 @@ footer .group .box figure{
         width: 35vw;
         height: 35vw;
     }
+
+    .collapsible-content{
+        font-size: 1.8vw;
+    }
+
+    .collapse-btn{
+        font-size: 2.2vw;
+    }
 }
 
 @media (max-width: 643px){
@@ -851,6 +866,14 @@ footer .group .box figure{
 
     .everything-ready h1{
         font-size: 7vw;
+    }
+
+    .collapsible-content{
+        font-size: 2.5vw;
+    }
+
+    .collapse-btn{
+        font-size: 3vw;
     }
 
     .sign-now{
@@ -911,5 +934,135 @@ footer .group .box figure{
     .dev-team-btn{
         padding: 2vw 4vw;
         font-size: 2vw;
+    }
+}
+
+@media (max-width: 426px){
+    header .container{
+        padding: 0 2rem;
+    }
+
+    main{
+        padding: 5rem 1rem;
+    }
+
+    .main-text{
+        width: 90%;
+    }
+
+    .main-text h1{
+        font-size: 13vw;
+    }
+
+    .main-text h3{
+        font-size: 4vw;
+        max-width: 100%;
+        margin-top: 1.5vw;
+    }
+
+    .get-started{
+        margin-bottom: 4vw;
+    }
+
+    .features h1{
+        font-size: 12vw;
+        margin-bottom: 18vw;
+    }
+
+    .features h2{
+        font-size: 4.5vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: 18vw;
+    }
+
+    .feature-btn{
+        font-size: 3.5vw;
+        padding: 3vw 5vw;
+    }
+
+    .feature-row{
+        row-gap: 5vw;
+    }
+
+    .how-it-works{
+        align-items:flex-end;
+    }
+
+    .how-it-works h1{
+        font-size: 11vw;
+    }
+
+    .how-it-works h2{
+        font-size: 4vw;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 500;
+    }
+
+    .collapsible-content{
+        font-size: 3.8vw;
+    }
+
+    .collapse-btn{
+        font-size: 4.5vw;
+    }
+
+    .learning h1{
+        font-size: 10vw;
+    }
+
+    .learning p{
+        font-size: 4vw;
+    }
+
+    .dev-team-btn{
+        font-size: 4vw !important;
+        padding: 4vw 6vw;
+    }
+
+    .everything-ready h1{
+        font-size: 12vw;
+    }
+
+    .everything-ready h2{
+        font-size: 6vw;
+    }
+
+    .sign-now{
+        font-size: 4vw;
+        padding: 4vw 6vw;
+    }
+}
+
+@media (max-width: 820px){
+    footer .group{
+        grid-template-columns: repeat(2, 2fr);
+        column-gap: 20vw;
+        row-gap: 10vw;
+    }
+
+    .box h2{
+        font-size: 1rem;
+    }
+
+    .box p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px){
+    footer{
+        justify-content: left;
+    }
+
+    .brand{
+        width: 100%;
+    }
+
+    footer .group{
+        grid-template-columns: repeat(1, 2fr) !important;
+        row-gap: 7vw;
     }
 }
