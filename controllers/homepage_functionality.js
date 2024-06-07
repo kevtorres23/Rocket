@@ -1,19 +1,22 @@
 window.onload = function() {
     function mostrarSidebar() {
+        var buttons = document.getElementById('buttons');
         var menuButton = document.getElementById('checkbtn');
         var sidebar = document.getElementById('sidebar');
         menuButton.onclick = function(){
             sidebar.style.display = 'block';
-        };
+            buttons.style.display = 'none';
+            menuButton.style.display = 'none';
+        }
 
         var closebutton = document.getElementById('close-sidebar');
         closebutton.onclick = function(){
             sidebar.style.display = 'none';
+            buttons.style.display = 'flex';
         };
     }
 
     mostrarSidebar();
-
 
     var collapseButtons = document.querySelectorAll('.collapse-btn');
 
