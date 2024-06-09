@@ -11,10 +11,10 @@ body{
     background-color: black;
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-bottom: 100px;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 6rem;
 }
 
 a{
@@ -27,22 +27,23 @@ a{
 
 .logo{
     width: auto;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     font-weight: 600;
     display: flex;
     color: white;
+    align-items: center;
 }
 
 .already-account{
     right: 0;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .upper{
     display: flex;
     align-items: center;
     width: 100%;
-    margin-bottom: 2vw;
+    margin-bottom: 2rem;
 }
 
 .login-link{
@@ -51,27 +52,28 @@ a{
 
 .black-side h1{
     font-weight: 600;
-    font-size: 3.5vw;
+    font-size: 3.4rem;
 }
 
 .black-side h2{
-    margin-top: -2vw;
+    margin-top: -2rem;
     font-weight: 300;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
 }
 
 .user-info{
     display: flex;
     flex-direction: column;
-    margin-top: 3vw;
+    margin-top: 3rem;
 }
 
 .user-info label{
     display: block;
-    margin-bottom: 0.6vw;
-    font-size: 1vw;
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    margin-top: 1.2vw;
+    margin-top: 1.2rem;
+    text-align: left;
 }
 
 .login-input{
@@ -79,13 +81,13 @@ a{
     color: white;
     font-family: 'DM Sans';
     outline: none;
-    margin-bottom: 0.5vw;
+    margin-bottom: 0.5rem;
     border: 1.5px solid #434343;
     border-radius: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 2.2vw;
-    width: 78%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 2.2rem;
+    width: 80%;
     background-color: #000000;
 }
 
@@ -100,9 +102,17 @@ a{
 
 .mid-field label{
     display: block;
-    margin-bottom: 0.6vw;
-    font-size: 1vw;
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
     font-weight: 500;
+}
+
+#name.login-input{
+    margin-right: 1rem;
+}
+
+#name.login-input, #lastname.login-input{
+    width: 16.5em;
 }
 
 .name-and-lastname{
@@ -113,17 +123,17 @@ a{
 
 .create-account-btn{
     width: 84%;
-    height: 3vw;
+    height: 2.7rem;
     background-color: #880AEA;
     color: white;
     cursor: pointer;
     transition: 0.4s;
-    font-size: 1vw;
+    font-size: 1rem;
     font-family: 'DM Sans';
     font-weight: 500;
     border: none;
     border-radius: 30px;
-    margin-top: 2vw;
+    margin-top: 2rem;
 }
 
 .white-side{
@@ -137,13 +147,14 @@ a{
 }
 
 .white-side h1{
-    font-size: 4vw;
+    font-size: 4rem;
     font-weight: 500;
+    text-align: center;
 }
 
 .white-side h2{
-    margin-top: -2vw;
-    font-size: 1.3vw;
+    margin-top: -2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     text-align: center;
 }
@@ -152,4 +163,156 @@ a{
     background: -webkit-linear-gradient(left, #D06CFF, #880AEA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1024px){
+    .login-input{
+        width: 90%;
+    }
+
+    .create-account-btn{
+        width: 100%;
+    }
+
+        .white-side{
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+@media (max-width: 995px){
+    .black-side h1, .black-side h2{
+        text-align: center;
+    }
+
+    .user-info{
+        align-items: center;
+    }
+
+    .login-input{
+        width: 28em;
+    }
+
+    #name.login-input{
+        margin-right: 1rem;
+    }
+
+    #name.login-input, #lastname.login-input{
+        width: 12em;
+    }
+
+    .name-and-lastname{
+        width: auto;
+        align-items: center;
+    }
+
+    .user-info label{
+        text-align: left !important;
+    }
+
+    .create-account-btn{
+        width: 25rem;
+    }
+
+    body{
+        flex-direction: column;
+    }
+
+    .black-side{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .white-side{
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+@media (max-width: 768px){
+    .user-info{
+        align-items: center;
+    }
+}
+
+@media (max-width: 570px){
+    .black-side h1{
+        font-size: 14vw;
+    }
+
+    .white-side{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .black-side{
+        padding-right: 3rem;
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
+
+    .white-side h1{
+        font-size: 14vw;
+        font-weight: 600;
+    }
+
+    .white-side h2{
+        margin-top: -1rem;
+        font-size: 4.7vw;
+    }
+
+    .black-side h2{
+        font-size: 4.7vw;
+    }
+
+    .already-account{
+        margin-top: 1rem;
+        font-size: 1rem;
+        color:#cdcdcd;
+    }
+
+    .upper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #name.login-input, #lastname.login-input{
+        width: 29vw;
+    }
+
+    .login-input{
+        width: 70vw;
+    }
+
+    .create-account-btn{
+        width: 75vw;
+    }
+
+    .badge{
+        width: 60vw;
+        height: 58vw;
+    }
+
+    .logo-link{
+        margin-right: 0;
+    }
+
+
+    .logo{
+        font-size: 1.7rem;
+    }
+
+    .white-side h1{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
 }

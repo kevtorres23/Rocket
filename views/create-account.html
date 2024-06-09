@@ -16,7 +16,7 @@
             <div class="upper">
                 <a href="../index.html" class="logo-link">
                     <div class="logo">
-                        <img src="images/rocket-logo.png" alt="" width="27vh" height="27vh">
+                        <img src="images/rocket-logo.png" alt="" width="27px" height="27px">
                         <span style="margin-left: 10px;">Rocket</span>
                     </div>
                 </a>
@@ -29,27 +29,33 @@
             <form action="" class="user-info">
                 <div class="name-and-lastname">
                     <div class="mid-field">
-                        <label>Name</label>
-                        <input type="text" id="name" class="login-input" style="width: 13.5vw; margin-right: 2vw;">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="login-input">
                     </div>
                     <div class="mid-field">
-                        <label>Last name</label>
-                        <input type="text" id="lastname" class="login-input" style="width: 13.5vw;">
+                        <label for="lastname">Last name</label>
+                        <input type="text" id="lastname" class="login-input">
                     </div>
                 </div>
-                <label>Email address</label>
-                <input type="text" id="email" class="login-input">
-                <label>Set a username</label>
-                <input type="text" id="username" class="login-input">
-                <label>Create a password</label>
-                <input type="password" id="password" class="login-input">
+                <div class="mid-field">
+                    <label for="email">Email address</label>
+                    <input type="text" id="email" class="login-input">
+                </div>
+                <div class="mid-field">
+                    <label for="username">Set a username</label>
+                    <input type="text" id="username" class="login-input">
+                </div>
+                <div class="mid-field">
+                    <label for="password">Create a password</label>
+                    <input type="password" id="password" class="login-input">
+                </div>
                 <a href="homepage.html"><button class="create-account-btn">Create account</button></a>
             </form>
         </section>
         <section class="white-side">
             <h1>Launch your <span class="keyword">Ideas</span></h1>
             <h2>We're a team that works to help you<br>meet your goals.</h2>
-            <img src="images/rocket-badge.png" alt="" width="320vw" height="290vw">
+            <img src="images/rocket-badge.png" alt="" width="320vw" height="290vw" class="badge">
         </section>
     </body>
 </html>
