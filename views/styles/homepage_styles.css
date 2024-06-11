@@ -86,6 +86,7 @@ nav a:hover:after{
     font-size: 20px;
     transition: 0.2s;
     margin-right: 25px;
+    color: black;
 }
 
 .buttons .ph-bold:hover{
