@@ -1,0 +1,136 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px;
+    border-bottom-color: rgb(200, 200, 200);
+    padding: 0 80px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: auto;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.logo img{
+    margin-right: 10px;
+}
+
+nav a{
+    margin-right: 35px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.2s;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color: #880AEA;
+    height: 2.5px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav a:hover:after{
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.new-request-btn{
+    padding: 8px 25px;
+    background-color: #880AEA;
+    color: white;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 14px;
+    border-style: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-right: 25px;
+}
+
+.new-request-btn:hover{
+    background-color: #890aea9f;
+}
+
+.buttons a{
+    text-decoration: none;
+}
+
+.buttons .ph-bold{
+    font-size: 20px;
+    transition: 0.2s;
+    margin-right: 25px;
+    color: black;
+}
+
+.buttons .ph-bold:hover{
+    color: #880AEA;
+}
+
+.user-profile-btn{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    cursor: pointer;
+    border-style: none;
+    background-image: url(../images/user-profile.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.checkbtn{
+    display: flex;
+    cursor: pointer;
+    display: none;
+    float: right;
+    margin-left: 25px;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 780px){
+    nav a, .buttons .new-request-btn {
+        display: none;
+    }
+
+    .checkbtn{
+        display: flex;
+    }
+
+    header{
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 425px){
+    header{
+        padding: 0 30px;
+    }
+}
