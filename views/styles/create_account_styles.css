@@ -165,6 +165,12 @@ a{
     -webkit-text-fill-color: transparent;
 }
 
+@media (max-width: 1440px){
+    #name.login-input, #lastname.login-input{
+        width: 14vw;
+    }
+}
+
 @media (max-width: 1024px){
     .login-input{
         width: 90%;
