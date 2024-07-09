@@ -601,12 +601,12 @@ main h3{
 
 .sign-now{
     margin-top: 2vw;
-    padding: 20px 40px;
+    padding: 15px 30px;
     color: black;
     cursor: pointer;
     background-color: white;
     font-family: 'DM Sans';
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 600;
     border-radius: 50px;
     border-style: none;
@@ -614,7 +614,7 @@ main h3{
 }
 
 .sign-now:hover{
-    padding: 20px 50px;
+    padding: 15px 40px;
 }
 
 .brand{
